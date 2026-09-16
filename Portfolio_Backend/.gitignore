@@ -1,0 +1,83 @@
+## ==========================================================
+## Standard .NET / Visual Studio / C# .gitignore for Backend
+## Project: Anushka Sharma Portfolio Backend (ASP.NET Core)
+## ==========================================================
+
+# Build results and compiled binaries
+[Bb]in/
+[Oo]bj/
+[Aa]rms/
+[Aa]rm64/
+[Dd]oc/
+[Dd]ocs/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio temporary files and working states
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains Rider / ReSharper
+.idea/
+*.DotSettings.user
+_ReSharper*/
+
+# Output and Publishing directories
+publish/
+out/
+dist/
+artifacts/
+[Tt]est[Rr]esults/
+coverage/
+*.lcov
+*.opencover.xml
+
+# NuGet package restore files
+*.nupkg
+*.snupkg
+packages/
+!packages/build/
+project.lock.json
+project.assets.json
+
+# User secrets & local environment files
+appsettings.local.json
+appsettings.Secrets.json
+*.env
+*.env.local
+
+# SQL / LocalDB files
+*.mdf
+*.ldf
+*.ndf
+
+# Crash dumps & profiling
+*.dmp
+*.crash
+*.stackdump
+
+# OS generated files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
