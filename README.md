@@ -4,9 +4,8 @@ An enterprise-grade personal developer portfolio architected to showcase high-th
 
 ---
 
-## 🏛️ Architecture Overview (Strictly Mirroring PINPS)
+## 🏛️ Architecture Overview
 
-This repository follows the dual-subsystem monorepo structure from the **PINPS** project:
 
 ```
 D:\Anushka_Portfolio\
