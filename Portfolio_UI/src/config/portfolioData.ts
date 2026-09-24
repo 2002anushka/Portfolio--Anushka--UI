@@ -209,7 +209,38 @@ export const portfolioData: PortfolioData = {
         "JWT Bearer & RBAC",
         "Azure App Services",
         "Swagger/OpenAPI"
-      ]
+      ],
+      mobileApp: {
+        appName: "BarPatrol Mobile",
+        framework: "Flutter (Dart)",
+        platformSummary: "Hospitality Inventory & Multi-Location Stock Intelligence",
+        screens: [
+          {
+            id: "bp-1",
+            title: "Multi-Location Inventory Area Selector",
+            subtitle: "Stock counts across Bar 2, Beer/Wine Coolers, Events, and Rails",
+            image: "/assets/mobile/barpatrol/barpatrol_inventory_type.jpg",
+            tag: "INVENTORY TYPE & LOCATIONS",
+            description: "Location-aware inventory management interface allowing bar managers to log Standard, Invoice, and Comp stock across physical bar stations."
+          },
+          {
+            id: "bp-2",
+            title: "Manager & Staff Authentication",
+            subtitle: "Secure role-based mobile credentials portal",
+            image: "/assets/mobile/barpatrol/barpatrol_login.jpg",
+            tag: "ROLE-BASED AUTH",
+            description: "Role-based credential portal communicating directly with backend ASP.NET Core JWT authentication services."
+          },
+          {
+            id: "bp-3",
+            title: "BarPatrol Mobile Identity",
+            subtitle: "Protect Your Profits brand mobile client",
+            image: "/assets/mobile/barpatrol/barpatrol_splash.jpg",
+            tag: "MOBILE CLIENT",
+            description: "Branded mobile launcher screen for on-floor hospitality staff and inventory auditors."
+          }
+        ]
+      }
     },
     {
       id: "gdm-eco-on-site",
@@ -248,7 +279,38 @@ export const portfolioData: PortfolioData = {
         "Tailwind CSS",
         "Flutter (Dart)",
         "OpenTelemetry"
-      ]
+      ],
+      mobileApp: {
+        appName: "Eco-On-Site",
+        framework: "Flutter (Dart)",
+        platformSummary: "Real-Time Smart Waste & IoT Sensor Telemetry Mobile Client",
+        screens: [
+          {
+            id: "gdm-1",
+            title: "Site Performance & Sensor Grid",
+            subtitle: "Real-time on-time dump compliance, missed alerts, and device tallies",
+            image: "/assets/mobile/gdm/gdm_dashboard.jpg",
+            tag: "IOT METRICS",
+            description: "Operator overview with compact date filters, active device tallies (24 devices), and live dump compliance percentage (94%)."
+          },
+          {
+            id: "gdm-2",
+            title: "Live Container Telemetry",
+            subtitle: "Battery status (92%), fill level (84%), and ultrasonic heartbeats",
+            image: "/assets/mobile/gdm/gdm_device_detail.jpg",
+            tag: "DEVICE DETAIL",
+            description: "Deep dive telemetry screen showing sensor health, active status, fill level progress (84% / 720L), and automated pickup schedules."
+          },
+          {
+            id: "gdm-3",
+            title: "Threshold & Disposal Alerts",
+            subtitle: "Instant notifications for container capacity breaches and delayed pickups",
+            image: "/assets/mobile/gdm/gdm_notifications.jpg",
+            tag: "REAL-TIME ALERTS",
+            description: "Real-time alert dispatch logging capacity threshold breaches, delayed pickup routes, and sensor reconnects."
+          }
+        ]
+      }
     },
     {
       id: "sgdps",
@@ -286,7 +348,54 @@ export const portfolioData: PortfolioData = {
         "Flutter 3 (Dart)",
         "Tailwind CSS",
         "SQLite / SQL Server"
-      ]
+      ],
+      mobileApp: {
+        appName: "SGDPS Collector",
+        framework: "Flutter 3 (Dart)",
+        platformSummary: "On-Field Community Treasury & Geotagged Collection Mobile Client",
+        screens: [
+          {
+            id: "sgdps-1",
+            title: "Namaste Field Collector Dashboard",
+            subtitle: "Multi-mode collection summary (Cash, UPI, Bank) and live metrics",
+            image: "/assets/mobile/sgdps/sgdps_dashboard.jpg",
+            tag: "FINANCIAL DASHBOARD",
+            description: "Comprehensive financial overview tracking ₹1.39L+ in 7-day collections across cash and instant UPI payments with 86 logged entries."
+          },
+          {
+            id: "sgdps-2",
+            title: "On-Field Payment Recording",
+            subtitle: "Unit selection, quick amount chips (₹500 - ₹5000), and payment mode",
+            image: "/assets/mobile/sgdps/sgdps_record_collection.jpg",
+            tag: "FIELD LOGGING",
+            description: "Fast on-field payment entry with automatic collector identity logging, preset amount chips, and cash/UPI payment method selection."
+          },
+          {
+            id: "sgdps-3",
+            title: "Puja Cycle Target & Unit Matrix",
+            subtitle: "Flat-by-flat paid vs unpaid status and block collection progress",
+            image: "/assets/mobile/sgdps/sgdps_reports_matrix.jpg",
+            tag: "UNIT AUDIT MATRIX",
+            description: "Block-by-block residential breakdown tracking 542+ paid units with 1-click collection prompts for pending residential flats."
+          },
+          {
+            id: "sgdps-4",
+            title: "UPI Digital Ledger & Receipts",
+            subtitle: "Detailed transaction history with 1-click digital receipt access",
+            image: "/assets/mobile/sgdps/sgdps_upi_ledger.jpg",
+            tag: "DIGITAL RECEIPT",
+            description: "Full transaction audit sheet linking individual flat payments and stall sponsorships directly to verifiable digital receipts."
+          },
+          {
+            id: "sgdps-5",
+            title: "Durga Puja 2026 Mobile Emblem",
+            subtitle: "Branded golden emblem mobile launcher screen",
+            image: "/assets/mobile/sgdps/sgdps_splash.jpg",
+            tag: "MOBILE BRANDING",
+            description: "Official mobile application launcher for community field volunteers and society collectors."
+          }
+        ]
+      }
     }
   ],
   skills: [

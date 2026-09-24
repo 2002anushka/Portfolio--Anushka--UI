@@ -2,8 +2,26 @@ import axios from 'axios';
 import { portfolioData } from '../config/portfolioData';
 import { ContactFormData, PortfolioData } from '../types/portfolio.types';
 
+// Resolve backend API URL dynamically:
+// - If VITE_API_URL is specified (e.g. via .env or hosting provider), use it.
+// - In production builds, default to https://anushkaportfoliobackend.runasp.net/api
+//   (or http if the frontend itself is loaded over http).
+// - In development builds, use the local proxy path '/api'.
+const resolveBaseUrl = (): string => {
+  if (import.meta.env.VITE_API_URL) {
+    return import.meta.env.VITE_API_URL;
+  }
+  if (import.meta.env.PROD) {
+    const isHttp = typeof window !== 'undefined' && window.location.protocol === 'http:';
+    return isHttp
+      ? 'http://anushkaportfoliobackend.runasp.net/api'
+      : 'https://anushkaportfoliobackend.runasp.net/api';
+  }
+  return '/api';
+};
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: resolveBaseUrl(),
   timeout: 8000,
   headers: {
     'Content-Type': 'application/json',

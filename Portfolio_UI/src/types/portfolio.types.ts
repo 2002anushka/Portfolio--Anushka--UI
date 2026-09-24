@@ -13,6 +13,23 @@ export interface ProjectItem {
   liveUrl?: string;
   accessNote?: string;
   requiresAuth?: boolean;
+  mobileApp?: MobileAppDetails;
+}
+
+export interface MobileScreenItem {
+  id: string;
+  title: string;
+  subtitle: string;
+  image: string;
+  tag?: string;
+  description?: string;
+}
+
+export interface MobileAppDetails {
+  appName: string;
+  framework: string;
+  platformSummary: string;
+  screens: MobileScreenItem[];
 }
 
 export interface SkillCategory {
